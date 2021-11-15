@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Artak facebook</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c4c9cc34;
+        }
+
+        div {
+            float: left;
+            padding-bottom: 100px;
+            padding-top: 100px;
+            width: 50%;
+        }
+
+        span {
+            color: #1374eb;
+            font-size: 50px;
+            font-weight: bolder;
+            margin: 250px;
+        }
+
+        #p1 {
+            margin: auto 250px;
+            font-size: 24px;
+        }
+
+        form {
+            padding: 20px;
+            background-color: white;
+            margin-right: 50%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        input {
+            width: -webkit-fill-available;
+            height: 30px;
+            margin: 10px;
+            border-radius: 5px;
+            padding: 8px;
+            border: 1px solid lightgrey;
+        }
+
+        #sub {
+            background-color: #1374eb;
+            color: white;
+            padding: 5px 40px 5px 40px;
+            border: none;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        #button {
+            padding: 5px;
+            background-color: rgb(27, 216, 27);
+            color: white;
+            border: none;
+            width: 120px;
+            border-radius: 5px;
+        }
+
+        #p2 {
+            font-size: 13px;
+            margin-right: 50%;
+            text-align: center;
+        }
+
+        #a1 {
+            color: #1374eb;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        #sub:hover {
+            background-color: #3b5998;
+            font-weight: bold;
+        }
+
+        #button:hover {
+            background-color: #279e21;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>facebook</span>
+    <p id="p1">facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми</p>
+</div>
+<div>
+    <form id="form1">
+        <input type="text" id="email" name="email" placeholder="Электронный адрес или номер телефона"> <br>
+        <input type="password" id="pass" name="pass" placeholder="Пароль">
+        <br>
+        <input type="submit" id="sub" value="Вход">
+        <br><br>
+        <a href id="a1">Забыли пароль?</a>
+        <br><br>
+        <hr>
+        <br>
+        <input type="button" id="button" onclick="alert('Hello World!')" value="Создать аккаунт">
+    </form>
+    <p id="p2"><b>Создать страницу</b> знаменитости музыкальной группы или компании</p>
+</div>
+</div>
+</body>
+</html>
