@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Picsart Academy </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .menu {
+            display: inline-block;
+            padding-top: 2%;
+            margin-left: 90px;
+
+        }
+
+        .List {
+            display: inline-block;
+        }
+
+        .List_item {
+            display: inline-block;
+            padding: 18px;
+
+
+        }
+
+        a {
+            color: #1E1E1E;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .new_skills {
+            width: 50%;
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .learn {
+            margin-left: 125px;
+            font-family: Georgia, serif;
+            font-size: 67px;
+            line-height: 70px;
+            color: #1F1F33;
+            padding-top: 5%;
+
+        }
+
+        .welcome {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            color: #1F1F33;
+            margin-left: 125px;
+            margin-top: -20px;
+        }
+
+        .button {
+            margin-left: 125px;
+            background: #1F1F33;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FCEECA;
+            margin-top: 5%;
+            cursor: pointer;
+            padding: 10px;
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+        .button:hover {
+            opacity: 0.7;
+        }
+
+        .img1 {
+            float: right;
+            border-radius: 50%;
+            box-shadow: rgb(255 250 217) 110px 0px 0px 12px;
+            margin-right: 65px;
+
+        }
+
+        .img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 42%;
+        }
+
+        .all {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .about_us_wraper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 454px;
+            background-color: #FFFDED;
+
+
+        }
+
+        .about_us_text {
+            text-align: center;
+            font-family: Museo Sans;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            padding-top: 2%;
+            color: #333333;
+        }
+
+        .tittle {
+            font-family: Museo Sans;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            color: #333333;
+        }
+
+        .about_us_bottom {
+            padding: .375rem .75rem;
+            margin-top: 3%;
+            color: #6c757d;
+            border: 1px solid #6c757d;
+            line-height: 1.5;
+            border-radius: .25rem;
+            font-size: 1rem;
+            background-color: #FFFDED;
+        }
+
+        .about_us_bottom:hover {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+            cursor: pointer;
+
+        }
+
+        .courses_and_programs {
+
+            font-family: Museo Sans;
+            font-size: 56px;
+            line-height: 70px;
+            text-align: center;
+            color: #333333;
+        }
+
+
+
+        .courses_and_programs_pictures {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .pictures {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .separate {
+            width: 100%;
+
+        }
+
+        .pic_div {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .pictures span {
+            font-family: Museo Sans;
+            font-size: 24px;
+            line-height: 44px;
+            color: #4A4A4A;
+            cursor: pointer;
+        }
+
+        .course_looking {
+            font-family: Museo Sans;
+            font-size: 48px;
+            line-height: 70px;
+            text-align: center;
+            color: #333333;
+        }
+
+        .subscribe {
+
+            font-family: Museo Sans;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            color: #333333;
+            margin-top: -35px;
+        }
+
+        .div_contact_input {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5%;
+
+
+
+        }
+
+        .contact_input {
+
+            width: 18%;
+            border-radius: 5px;
+            margin-right: 15px;
+            height: 30px;
+            padding: .375rem .75rem;
+            border: 1px solid rgb(212, 212, 212);
+
+        }
+
+        .contact_input:focus {
+            outline: none !important;
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+        }
+
+
+
+
+
+
+
+        .div_contact_input button {
+
+            margin-right: 7%;
+            margin-left: -8px;
+
+        }
+
+        .div_contact_input button:hover {
+
+            color: #fff;
+            border-color: #6c757d;
+        }
+
+        .subscribe_button {
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 10px;
+            line-height: 24px;
+            color: #FFDF01;
+            background: #4A4A4A;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .footer_wraper {
+            display: flex;
+            justify-content: space-between;
+            background: #ffffff;
+            padding: 3%;
+            margin-top: 5%;
+        }
+
+        .footer_wraper_child {
+
+            font-family: Museo Sans;
+            font-size: 22px;
+            padding-top: 1.6%;
+            color: #5E5E5E;
+            text-align: center;
+
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .icon {
+            font-size: 32px;
+            padding-left: 3%;
+            text-transform: none;
+            margin-right: 15px;
+            color: #5E5E5E;
+
+        }
+
+        .icon_wraper {
+            padding-top: 1.6%;
+        }
+
+        
+        .dropbtn {
+            color: black;
+            background-color: #fff;
+            font-size: 19px;
+            border: none;
+            cursor: pointer;
+        }
+
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 18rem;
+            z-index: 1;
+        }
+
+       
+        .dropdown-content a {
+            color: black;
+            background-color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+       
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: .25rem;
+        }
+    </style>
+
+<body>
+    <div class="menu">
+
+        <img src="academy.svg" alt="Pycsart Academy" style="cursor: pointer;">
+        <li class="List_item dropbtn">
+            <div class="List">
+                <ul">
+        <li class="dropdown">
+            <button class="dropbtn">All Courses <i class="fa fa-sort-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Frontend Web Development</a>
+                <a href="#">Backend Web Development</a>
+                <a href="#">Advanced C++</a>
+                <a href="#">Graphic Design</a>
+                <a href="#">QA Automation</a>
+                <a href="#">Advanced DevOps</a>
+                <a href="#">iOS Application Development</a>
+                <a href="#">Android Application Development</a>
+                <a href="#">Data Science and Machine Learning</a>
+                <a href="#">UI/UX Design</a>
+        </li>
+        </ul>
+    </div>
+    </li>
+    <li class="List_item"> <a href="#Schedule"> Schedule </a> </li>
+    <li class="List_item"> <a href="#News"> News </a> </li>
+    <li class="List_item"> <a href="#About us"> About us</a> </li>
+    <li class="List_item"> <a href="#Careers"> Careers</a> </li>
+    </ul>
+    </div>
+    </div>
+<!-- Learn new skills with top educators -->
+    <div class="all">
+        <div class="new_skills">
+            <p class="learn"> Learn <b> new skills </b> with top educators</p>
+            <p class="welcome">Welcome to an educational IT journey that takes</p>
+            <p class="welcome"> you towards a brighter and more lucrative future!</p>
+            <button type="button" class="button">Apply Now</button>
+
+        </div>
+        <div class="img">
+            <img src="img1.png" alt="pixart team" class="img1">
+        </div>
+    </div>
+
+<!-- We believe that learning -->
+
+    <div class="about_us_wraper">
+        <h2 class="tittle">We believe that learning is the key that unlocks career success!</h2>
+        <p class="about_us_text">With hard work and a passion for gaining knowledge, you can become a demanded IT
+            specialist. And we are here to get you to that </br>goal. Picsart Academy is here to give you that key and
+            help you open the door.</p>
+        <button class="about_us_bottom">About Us</button>
+    </div>
+    <!-- Courses and Programs -->
+    <div>
+        <h2 class="courses_and_programs">Courses and Programs</h2>
+        <div class="courses_and_programs_pictures">
+
+            <div class="pic_div">
+                <div class="pictures ">
+                    <a href="#"> <img src="pic1.png" alt="Frontend Web Development" class="separate">
+                        <span>Frontend Web Development</span> </a>
+                </div>
+                <div class="pictures">
+                    <a href="#"> <img src="pic2.png" alt="Backend Web Development" class="separate">
+                        <span>Backend Web Development</span></a>
+                </div>
+                <div class="pictures ">
+                    <a href="#"> <img src="pic3.png" alt="Advanced C++" class="separate">
+                        <span>Advanced C++</span></a>
+                </div>
+            </div>
+            <div class="pic_div">
+                <div class="pictures ">
+                    <a href="#"> <img src="pic4.png" alt="Graphic Design" class="separate">
+                        <span>Graphic Design</span> </a>
+                </div>
+                <div class="pictures">
+                    <a href="#"> <img src="pic5.png" alt="QA Automation" class="separate">
+                        <span>QA Automation</span> </a>
+                </div>
+                <div class="pictures ">
+                    <a href="#"> <img src="pic6.png" alt="Advanced DevOps" class="separate">
+                        <span>Advanced DevOps</span> </a>
+                </div>
+            </div>
+            <div class="pic_div">
+                <div class="pictures ">
+                    <a href="#"><img src="pic7.png" alt="iOS Application Development" class="separate">
+                        <span>iOS Application Development</span> </a>
+                </div>
+                <div class="pictures">
+                    <a href="#"> <img src="pic8.png" alt="Android Application Development" class="separate">
+                        <span>Android Application Development</span> </a>
+                </div>
+                <div class="pictures ">
+                    <a href="#"> <img src="pic9.png" alt="Data Science and Machine Learning" class="separate">
+                        <span>Data Science and Machine Learning</span> </a>
+                </div>
+            </div>
+            <div class="pic_div">
+                <div class="pictures">
+                    <a href="#"> <img src="pic10.png" alt="UI/UX Design" class="separate">
+                        <span>UI/UX Design</span> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Can’t find the course you’re looking for? -->
+    <div>
+        <h2 class="course_looking">Can’t find the course you’re looking for?</h2>
+        <p class="subscribe">Subscribe to our newsletter and get the latest updates about new courses and programs.</p>
+    </div>
+    <div class="div_contact_input">
+        <input type="text" placeholder="Email" class="contact_input">
+        <input type="text" placeholder="Name" class="contact_input">
+        <input type="text" placeholder="Phone" class="contact_input">
+        <button class="subscribe_button">Subscribe</button>
+    </div>
+
+    <!--footer -->
+
+    <div class="footer_wraper">
+
+        <div class="footer_wraper_child">
+            <div>E-MAIL US</div>
+            <p>contact@picsart.academy</p>
+        </div>
+
+        <div class="footer_wraper_child">
+            <div>FOLLOW US</div>
+            <div class="icon_wraper">
+                <i class="fa fa-facebook icon" aria-hidden="true"></i>
+                <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                <i class="fa fa-twitter icon" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play icon" aria-hidden="true"></i>
+
+            </div>
+        </div>
+
+        <div class="footer_wraper_child">
+            <div>GET THE FREE APP</div>
+            <div class="icon_wraper">
+                <i class="fa fa-apple icon"></i>
+                <i class="fa fa-android icon"></i>
+                <i class="fa fa-windows icon"></i>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</head>
+
+</html>
